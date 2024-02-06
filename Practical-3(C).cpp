@@ -11,7 +11,7 @@ int main(){
 
      float avg = (s1 + s2 + s3 + s4 + s5)/5 ;
 
-     if(s1 > 12 || s2 > 12 || s3 > 12 || s4 > 12 || s5 > 12 ){
+     if(s1 <= 30 && s2 <= 30 && s3 <= 30 && s4 <= 30 && s5 <= 30 ){
           if (avg >= 26)
           {
                cout << "Congratulations ! You Have Passed With A Grades !" ;
