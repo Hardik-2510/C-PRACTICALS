@@ -5,28 +5,28 @@ int main(){
 
      // grades according marks
      
-     int n ;
+     int s1 , s2 , s3 , s4 , s5  ;
      cout << "Enter Student's Marks (Out of 30) :- " ;
-     cin >> n ;
+     cin >> s1 >> s2 >> s3 >> s4 >> s5 ;
 
-     if (n >= 12 && n <= 30)
-     {
-          char grade;
-          if (n >= 26){
-               grade = 'A';
+     float avg = (s1 + s2 + s3 + s4 + s5)/5 ;
+
+     if(s1 > 12 || s2 > 12 || s3 > 12 || s4 > 12 || s5 > 12 ){
+          if (avg >= 26)
+          {
+               cout << "Congratulations ! You Have Passed With A Grades !" ;
           }
-          else if(n >=  21){
-               grade = 'B';
+          else if(avg >= 21){
+               cout << "Congratulations ! You Have Passed With B Grades !" ;
           }
-          else if(n >=  13){
-               grade = 'C';
+          else if(avg >= 13){
+               cout << "Congratulations ! You Have Passed With C Grades !" ;
           }
-          else{
-               grade = 'D';
+          else if(avg >= 12){
+               cout << "Congratulations ! You Have Passed With D Grades !" ;
           }
-          cout << "Congratultion ! You Passed With " << grade << " Grades !" ;
      }
-     else if(n < 12){
+     else if(avg < 12){
           cout << "Alert ! You Are Failed And You Have To Give Makeup Test To Clear Subject !";
      }
      else{
