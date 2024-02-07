@@ -10,6 +10,8 @@ int main(){
      cin >> a ;
      cout << "Enter Number-2 :- ";
      cin >> b ;
+     
+     cout << "Number-1 = " << a << " , Number-2 = " << b ;
 
      temp = a ;
      a = b ; 
